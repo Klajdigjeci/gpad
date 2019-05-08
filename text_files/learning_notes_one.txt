@@ -1,0 +1,25 @@
+Python notes
+
+
+        self.checkbox_one = CheckBox(pos_hint={"center_x":0.9,"center_y": 0.7},size_hint=(0.1,0.1),on_press=lambda x:self.goal_progress(self.checkbox_one))
+
+        self.add_widget(self.text_input_one)
+
+        self.add_widget(self.checkbox_one)
+
+        self.text_input_two= TextInput(text=goal_two,pos_hint={"center_x":0.4,"center_y": 0.5},size_hint=(0.7,0.1))
+        self.checkbox_two = CheckBox(pos_hint={"center_x":0.9,"center_y": 0.5},size_hint=(0.1,0.1),on_press=lambda x:self.goal_progress(self.checkbox_two))
+
+        self.add_widget(self.text_input_two)
+        self.add_widget(self.checkbox_two)
+
+        self.text_input_three= TextInput(text=goal_three,pos_hint={"center_x":0.4,"center_y": 0.3},size_hint=(0.7,0.1))
+        self.checkbox_three = CheckBox(pos_hint={"center_x":0.9,"center_y": 0.3},size_hint=(0.1,0.1),on_press=lambda x:self.goal_progress(self.checkbox_three))
+
+        self.add_widget(self.text_input_three)
+        self.add_widget(self.checkbox_three)
+
+        self.text_input_four= TextInput(text=goal_four,pos_hint={"center_x":0.4,"center_y": 0.1},size_hint=(0.7,0.1))
+        self.checkbox_four = CheckBox(pos_hint={"center_x":0.9,"center_y": 0.1},size_hint=(0.1,0.1),on_press=lambda x:self.goal_progress(self.checkbox_four))
+
+        self.add_widget(self.text_input_four)

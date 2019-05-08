@@ -1,0 +1,17 @@
+#:kivy 1.10.0
+
+<CustomWidget>:
+    last_name_text_input: last_name
+    Label:
+        text: "Last Name:"
+        pos: 655,400
+        size: 100, 30
+    TextInput:
+        id: last_name
+        pos: 760,400
+        size: 100, 30
+    Button:
+        text: "Save Name"
+        pos: 870,400
+        size: 100, 30
+        on_release: root.submit_surname()

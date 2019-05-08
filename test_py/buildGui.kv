@@ -1,0 +1,66 @@
+#:kivy 1.0.9
+<build_Gui>:
+
+
+    Label:
+        font_size: 50
+        center_x: root.width / 2
+        top: root.top
+        text: "Gnotes"
+
+    Button:
+        center_x: root.width * 1 / 4
+        top: root.top - 100
+        text: "New ideas"
+        width: 250
+
+    Button:
+        center_x: root.width * 3 / 4
+        top: root.top - 100
+        text: "learning notes"
+        width: 250
+
+    Button:
+        center_x: root.width * 1 / 4
+        top: root.top - 250
+        text: "Reminders"
+        width: 250
+
+    Button:
+        center_x: root.width * 3 / 4
+        top: root.top - 250
+        text: "Goals"
+        width: 250
+
+
+
+    Button:
+        center_x: root.width * 3 / 4
+        top: root.top - 400
+        text: "Simple calculator"
+        width: 250
+        on_press:
+            root.manager.transition.direction = "left"
+            root.manager.transition.duration = 1
+            root.manager.current = "screen_two"
+#:kivy 1.0.9
+<ScreenTwo>:
+    canvas:
+        Rectangle:
+            pos: self.center_x - 5, 0
+            size: 10, self.height
+    Button:
+        center_x: root.width * 1 / 4
+        top: root.top - 400
+        text: "Other notes"
+        width: 250
+        on_press:
+            root.manager.transition.direction = "left"
+            root.manager.transition.duration = 1
+            root.manager.current = "screen_one"
+
+#    Label:
+#        font_size: 70
+#        center_x: root.width * 3 / 4
+#        top: root.top - 50
+#        text: "0"
